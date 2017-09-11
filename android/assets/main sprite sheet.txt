@@ -1,0 +1,40 @@
+main sprite sheet.png
+size: 1595, 216
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+main sprite 1
+  rotate: false
+  xy: 0, 0
+  size: 319, 216
+  orig: 319, 216
+  offset: 0, 0
+  index: -1
+main sprite 2
+  rotate: false
+  xy: 319, 0
+  size: 319, 216
+  orig: 319, 216
+  offset: 0, 0
+  index: -1
+main sprite 3
+  rotate: false
+  xy: 638, 0
+  size: 319, 216
+  orig: 319, 216
+  offset: 0, 0
+  index: -1
+main sprite 4
+  rotate: false
+  xy: 957, 0
+  size: 319, 216
+  orig: 319, 216
+  offset: 0, 0
+  index: -1
+main sprite 5
+  rotate: false
+  xy: 1276, 0
+  size: 319, 216
+  orig: 319, 216
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,2 @@
+include 'android', 'html', 'core', ':BaseGameUtils'
+project(':BaseGameUtils').projectDir = new File('android-basic-samples-master/BasicSamples/libraries/BaseGameUtils')

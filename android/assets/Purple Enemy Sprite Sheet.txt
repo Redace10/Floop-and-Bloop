@@ -1,0 +1,54 @@
+Purple Enemy Sprite Sheet.png
+size: 319, 1733
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+enemy sprite 1
+  rotate: false
+  xy: 0, 0
+  size: 319, 247
+  orig: 319, 247
+  offset: 0, 0
+  index: -1
+enemy sprite 2
+  rotate: false
+  xy: 0, 247
+  size: 319, 248
+  orig: 319, 248
+  offset: 0, 0
+  index: -1
+enemy sprite 3
+  rotate: false
+  xy: 0, 495
+  size: 319, 248
+  orig: 319, 248
+  offset: 0, 0
+  index: -1
+enemy sprite 4
+  rotate: false
+  xy: 0, 743
+  size: 319, 247
+  orig: 319, 247
+  offset: 0, 0
+  index: -1
+enemy sprite 5
+  rotate: false
+  xy: 0, 990
+  size: 319, 248
+  orig: 319, 248
+  offset: 0, 0
+  index: -1
+enemy sprite 6
+  rotate: false
+  xy: 0, 1238
+  size: 319, 247
+  orig: 319, 247
+  offset: 0, 0
+  index: -1
+enemy sprite 7
+  rotate: false
+  xy: 0, 1485
+  size: 319, 248
+  orig: 319, 248
+  offset: 0, 0
+  index: -1

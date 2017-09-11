@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "399335675440",
+    "firebase_url": "https://floop-and-bloop.firebaseio.com",
+    "project_id": "floop-and-bloop",
+    "storage_bucket": "floop-and-bloop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399335675440:android:a29c971dfc44c526",
+        "android_client_info": {
+          "package_name": "com.floopandbloop.game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399335675440-953fqpcmlmecidnjm3u5i5l5uubs3040.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.floopandbloop.game",
+            "certificate_hash": "903e7e394f67859cb9ce9405d461ae94b725e1c3"
+          }
+        },
+        {
+          "client_id": "399335675440-sj7vakmumalh8qovc7mg9uugkq5pm9br.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPRBEANtH-_M_PekYIvLbwlIfE1tOKcEE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399335675440-sj7vakmumalh8qovc7mg9uugkq5pm9br.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

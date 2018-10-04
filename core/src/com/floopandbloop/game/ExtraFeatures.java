@@ -66,23 +66,28 @@ public class ExtraFeatures {
     private Texture logoutButton;
     private Texture playButton;
     private Texture leaderboardButton;
+    private Texture policyButton;
     private Texture loginButtonAfter;
     private Texture logoutButtonAfter;
     private Texture playButtonAfter;
     private Texture leaderboardButtonAfter;
+    private Texture policyButtonAfter;
 
     private int buttonWidth, buttonHeight;
     private int loginButtonPosX, loginButtonPosY;
     private int playButtonPosX, playButtonPosY;
     private int leaderboardButtonPosX, leaderboardButtonPosY;
+    private int policyButtonPosX, policyButtonPosY;
 
     private Circle playCircle;
     private Circle loginCircle;
     private Circle leaderboardCircle;
+    private Circle policyCircle;
 
     public static boolean playClicked = false;
     public static boolean loginClicked = false;
     public static boolean leaderboardClicked = false;
+    public static boolean policyClicked = false;
     public static boolean isLoggedIn = false;
     public static boolean submitScore = true;
 
@@ -117,11 +122,13 @@ public class ExtraFeatures {
         logoutButton = new Texture("logout button.png");
         playButton = new Texture("play button.png");
         leaderboardButton = new Texture("leaderboard button.png");
+        policyButton = new Texture("policy button.png");
 
         loginButtonAfter = new Texture("login button after.png");
         logoutButtonAfter = new Texture("logout button after.png");
         playButtonAfter = new Texture("play button after.png");
         leaderboardButtonAfter = new Texture("leaderboard button after.png");
+        policyButtonAfter = new Texture("policy button after.png");
 
         buttonWidth = (int) (GameSettings.SCREENHEIGHT / GameSettings.BUTTON_SIZEFACTOR);
         buttonHeight = (int) (GameSettings.SCREENHEIGHT / GameSettings.BUTTON_SIZEFACTOR);
@@ -138,6 +145,11 @@ public class ExtraFeatures {
         playButtonPosX = playerPosX;
         loginButtonPosX = playButtonPosX + buttonWidth/2 + 100;
         leaderboardButtonPosX = loginButtonPosX + buttonWidth/2 + 100;
+        policyButtonPosX = leaderboardButtonPosX + buttonWidth/2 + 100;
+        playButtonPosY = playerPosY - buttonHeight - buttonHeight/16;
+        loginButtonPosY = playButtonPosY;
+        leaderboardButtonPosY = playButtonPosY;
+        policyButtonPosY = playButtonPosY;
         playButtonPosY = playerPosY - buttonHeight - buttonHeight/16;
         loginButtonPosY = playButtonPosY;
         leaderboardButtonPosY = playButtonPosY;
@@ -145,6 +157,7 @@ public class ExtraFeatures {
         playCircle = new Circle(playButtonPosX + buttonWidth/2, playButtonPosY + buttonHeight/2, buttonHeight/2);
         loginCircle = new Circle(loginButtonPosX + buttonWidth/2, loginButtonPosY + buttonHeight/2, buttonHeight/2);
         leaderboardCircle = new Circle(leaderboardButtonPosX + buttonWidth/2, leaderboardButtonPosY + buttonHeight/2, buttonHeight/2);
+        policyCircle = new Circle(policyButtonPosX + buttonWidth/2, policyButtonPosY + buttonHeight/2, buttonHeight/2);
 
         enemyAtlas = new TextureAtlas(Gdx.files.internal(GameSettings.ENEMY_SPRITESHEET));
         enemyAnimation = new Animation(1/10f, enemyAtlas.getRegions());
@@ -339,6 +352,14 @@ public class ExtraFeatures {
         }
     }
 
+    public Texture getPolicyButton() {
+        if (policyClicked == true) {
+            return policyButtonAfter;
+        } else {
+            return policyButton;
+        }
+    }
+
     public float getMain_menu_posX() {
         return main_menu_posX;
     }
@@ -435,6 +456,14 @@ public class ExtraFeatures {
         return leaderboardButtonPosY;
     }
 
+    public int getPolicyButtonPosX(){
+        return policyButtonPosX;
+    }
+
+    public int getPolicyButtonPosY(){
+        return policyButtonPosY;
+    }
+
     public Circle getPlayCircle() {
         return playCircle;
     }
@@ -445,5 +474,9 @@ public class ExtraFeatures {
 
     public Circle getLeaderboardCircle() {
         return leaderboardCircle;
+    }
+
+    public Circle getPolicyCircle() {
+        return policyCircle;
     }
 }

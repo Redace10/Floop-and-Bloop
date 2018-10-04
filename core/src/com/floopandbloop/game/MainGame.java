@@ -140,6 +140,8 @@ public class MainGame extends ApplicationAdapter implements InputProcessor{
 					features.getButtonWidth(), features.getButtonHeight());
 			batch.draw(features.getLeaderboardButton(), features.getLeaderboardButtonPosX(), features.getLeaderboardButtonPosY(),
 					features.getButtonWidth(), features.getButtonHeight());
+			batch.draw(features.getPolicyButton(), features.getPolicyButtonPosX(), features.getPolicyButtonPosY(),
+					features.getButtonWidth(), features.getButtonHeight());
 		}
 		drawAd();
 		batch.end();
@@ -163,6 +165,8 @@ public class MainGame extends ApplicationAdapter implements InputProcessor{
 				ExtraFeatures.leaderboardClicked = true;
 			} else if (features.getPlayCircle().contains(screenX, GameSettings.SCREENHEIGHT - screenY) == true) {
 				ExtraFeatures.playClicked = true;
+			} else if (features.getPolicyCircle().contains(screenX, GameSettings.SCREENHEIGHT - screenY) == true) {
+				ExtraFeatures.policyClicked = true;
 			}
 		} else {
 			player.ableToGoUp();
@@ -195,9 +199,15 @@ public class MainGame extends ApplicationAdapter implements InputProcessor{
 				ExtraFeatures.submitScore = true;
 			}
 		}
+		else if (ExtraFeatures.policyClicked == true) {
+			if (features.getPolicyCircle().contains(screenX, GameSettings.SCREENHEIGHT - screenY) == true) {
+				playServices.goToUrl();
+			}
+		}
 		ExtraFeatures.playClicked = false;
 		ExtraFeatures.loginClicked = false;
 		ExtraFeatures.leaderboardClicked = false;
+		ExtraFeatures.policyClicked = false;
 		return true;
 	}
 

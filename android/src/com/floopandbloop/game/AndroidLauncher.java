@@ -274,4 +274,11 @@ public class AndroidLauncher extends AndroidApplication implements AdHandler, co
 		moveTaskToBack(true);
 	}
 
+	@Override
+	public void goToUrl() {
+		Uri uri = Uri.parse("https://leemyungjae10.wixsite.com/floopandbloop");
+		Intent intent= new Intent(Intent.ACTION_VIEW,uri);
+		startActivity(intent);
+	}
+
 }

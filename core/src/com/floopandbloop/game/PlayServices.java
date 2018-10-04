@@ -11,4 +11,5 @@ public interface PlayServices
     public long getHighScore();
     public void unlockAchievement();
     public void showAchievement();
+    public void goToUrl();
 }

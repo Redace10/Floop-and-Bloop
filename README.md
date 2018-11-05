@@ -11,6 +11,7 @@ Floop and Bloop is a game depicting the inner turmoils of a creature as he strug
 - Precise collision detection by using Physics Body Editor
 - Tap the screen to jump and gryoscope for moving horizontally
 - Highscore is displayed which you can compare and compete with other people in the leaderboard
+- Includes a privacy policy https://leemyungjae10.wixsite.com/floopandbloop
 
 # Screenshot:
 ![Alt text](/screenshots/menu.PNG)
